@@ -13,7 +13,9 @@
 				<img src="nerdluv.png" alt="banner logo" /> <br />
 				where meek geeks meet
 			</div>
-	
+	        
+            {% for user in users %}
+
 			<div id="matches">
 				<h1>Matches for Marty Stepp</h1>
 
@@ -28,10 +30,12 @@
 						<strong>age:</strong>     {{ user[2] }} <br />
 						<strong>type:</strong>    {{ user[3] }} <br />
 						<strong>OS:</strong>      {{ user[4] }} <br />
-						<strong>rating:</strong>  {{ user[6] }} + '-' {{  user[7] }}
+						<strong>rating:</strong>  {{ user[7] }}
 					</p>
 				</div>
 			</div>
+
+			{% end %}
 		</div>
 		
 		<p>
